@@ -45,7 +45,9 @@ Afterwards you can create or change into your content directory and create a `co
 	TITLE='Wiki' # Title Optional
 
 ## Usage
-Afterwards you can just run `wiki web` in your content directory to start the server.
+Afterwards you can just run `wiki web` (or `python -m wiki web`) in your content directory to start the server.
+
+Warning: Do not run it using `flask` command, it will cause bugs!
 
 ## Development
 If you plan on helping with the development of this project you can clone the repository, open the newly created directory in a terminal and run `pip install -e .`, after which both the tests and the wiki cli will be available to you.
