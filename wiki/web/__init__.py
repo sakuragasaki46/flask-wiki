@@ -30,8 +30,12 @@ current_users = LocalProxy(get_users)
 
 
 def create_app(directory):
+    if not isinstance(directory, (str, bytes, os.PathLike)):
+        raise WikiError('Do not run this app with `flask` command.\n'
+                        'Use `wiki web` instead.')
+    
     app = Flask(__name__)
-    app.config['CONTENT_DIR'] = os.getcwd()
+    app.config['CONTENT_DIR'] = directory
     app.config['TITLE'] = u'wiki'
     try:
         app.config.from_pyfile(
