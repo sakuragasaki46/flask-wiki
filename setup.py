@@ -5,11 +5,11 @@ print(find_packages())
 
 setup(
     name='wiki2',
-    version='2.0.3',
+    version='2.0.4',
     description='simple python markdown wiki with web ui',
     author='Alexander Jung-Loddenkemper',
     author_email='alexander@julo.ch',
-    url='https://github.com/alexanderjulo/wiki',
+    url='https://github.com/sakuragasaki46/flask-wiki',
     packages=find_packages(),
     include_package_data=True,
     install_requires=[

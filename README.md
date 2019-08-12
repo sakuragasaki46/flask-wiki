@@ -35,7 +35,7 @@ but found nothing, I just wrote this down. I hope that it might help others ,too
 ## Setup
 You can install wiki using:
 
-	pip install wiki2
+	pip install .
 
 
 Afterwards you can create or change into your content directory and create a `config.py` file in it, that contains at least the following:
